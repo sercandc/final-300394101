@@ -76,7 +76,7 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  var dicsecs = Math.floor((distance % (100)));
+  var dicsecs = Math.floor((distance % (10)));
   
 
     document.getElementById('demo').innerHTML = days+ '<sub>days</sub>' +hours+' <sub>hrs</sub>' +minutes+ '<sub>mins</sub>'+seconds + '<sub>scnds</sub>' +dicsecs+ '<sub>decscnd</sub> ';
